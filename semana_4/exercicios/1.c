@@ -33,7 +33,13 @@ void contar(LinkedNode *inicio, int *qtd, int *soma) {
 
 void imprimir1(LinkedNode *inicio) {
     LinkedNode *atual;
-    for (atual = inicio; atual != NULL; atual = atual->next) printf("%d", atual->data);
+    for (atual = inicio; atual != NULL; atual = atual->next) {
+      if (atual->next == NULL) {
+        printf("%d", atual->data);
+      } else {
+        printf("%d ", atual->data);
+      }
+    }
     printf("\n");
 }
 
@@ -53,9 +59,14 @@ void imprimir2(LinkedNode *inicio) {
     atual = atual->next;
   }
 
-  for (int i = size - 1; i >= 0; i--) printf("%d ", data[i]);
+  for (int i = size - 1; i >= 0; i--) {
+    if (i == 0) {
+      printf("%d", data[i]);
+    } else {
+      printf("%d ", data[i]);
+    }
+  }
   printf("\n");
-
 }
 
 int main() {

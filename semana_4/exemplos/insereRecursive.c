@@ -36,7 +36,7 @@ linkedNode *insereNoFinalRecursivo(linkedNode *inicio, int elemento) {
 
 // ta com vazamento de memoria
 int main () {
-  linkedNode *inicio = NULL;
+  LinkedNode *inicio = NULL;
 
   inicio = insereNoFinalRecursivo(inicio, 10);
   inicio = insereNoFinalRecursivo(inicio, 20);
