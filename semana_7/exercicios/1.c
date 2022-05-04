@@ -48,7 +48,6 @@ NoArvore *func(NoArvore *raiz, int chaveNova, int *flag) {
   return raiz;
 }
 
-
 NoArvore *inserir(NoArvore *raiz, int chaveNova) {
   int flag = 1;
   raiz = func(raiz, chaveNova, &flag);

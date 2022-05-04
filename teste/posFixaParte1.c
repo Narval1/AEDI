@@ -55,49 +55,16 @@ void liberarPilha(PilhaDinamica *pilha) {
   free(pilha);
 }
 
+int calcular_posfixa(char *expressao, double *resultado) {
+    
+}
+
 int main() {
   PilhaDinamica *p = criarPilha();
-  int r, item;
+  float r, item;
 
-  item = 10;
-  r = push(p, item);
-  printf("E %d : %d\n", item, r);
-
-  item = 20;
-  r = push(p, item);
-  printf("E %d : %d\n", item, r);
-
-  item = 30;
-  r = push(p, item);
-  printf("E %d : %d\n", item, r);
-
-  item = 40;
-  r = push(p, item);
-  printf("E %d : %d\n", item, r);
-
-  item = 50;
-  r = push(p, item);
-  printf("E %d : %d\n", item, r);
-
-  r = pop(p, &item);
-  printf("D %d : %d\n", item, r);
-
-  r = pop(p, &item);
-  printf("D %d : %d\n", item, r);
-
-  r = pop(p, &item);
-  printf("D %d : %d\n", item, r);
-
-  r = pop(p, &item);
-  printf("D %d : %d\n", item, r);
-
-  r = pop(p, &item);
-  printf("D %d : %d\n", item, r);
-
-  r = pop(p, &item);
-  printf("D %d : %d\n", item, r);
-
-  liberarPilha(p);
+  char *aux = "515";
+  printf("%.3f\n", (double)aux[0]);
 
   return 0;
 }
